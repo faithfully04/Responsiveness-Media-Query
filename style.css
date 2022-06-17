@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('..images\bg-intro-desktop.png');
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+main div {
+    padding: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.grid1 {
+    background-color: transparent;
+    grid-area: a;
+}
+
+.grid2 {
+    background-color: hsl(248, 32%, 49%);
+    grid-area: b;
+}
+
+.grid3 {
+    background-color: transparent;
+    grid-area: c;
+}
+
+.grid4 {
+    background-color: white;
+    grid-area: d;
+}
